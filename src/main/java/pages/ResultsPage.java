@@ -37,7 +37,7 @@ public class ResultsPage {
                 test.pass((i + 1) + ". " + name + " - $" + price);
 
             } catch (StaleElementReferenceException e) {
-                test.warning("Producto #" + (i + 1) + " se actualizó en el DOM. Reintentando...");
+                test.warning("Producto #" + (i + 1) + " se actualizó en el DOM. Reintentando.");
                 i--;
             } catch (NoSuchElementException e) {
                 test.warning("No se pudo obtener nombre o precio del producto #" + (i + 1));
